@@ -275,6 +275,7 @@ img {
 }
 
 .companies__data {
+    overflow: hidden;
     padding: 20px 30px;
     margin: 0 auto;
     max-width: calc(var(--index) * 40);
@@ -282,17 +283,41 @@ img {
     border-radius: .5rem;
 }
 
+.companies__slider-inner {
+    display: flex;
+    gap: calc(var(--index) * 6.2);
+    width: 200%;
+    transition: all 15s ease;
+    animation: slider 6s infinite linear;
+    animation-delay: 2s;
+}
+
+.companies__slider-inner:hover {
+    animation-play-state: paused;
+}
+
 .compainies__list {
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: calc(var(--index) * 6);
     align-items: center;
+    width: 100%;
 }
 
 .companies__item {
     display: inline-block;
 }
 
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-53.9%);
+    }
+}
 
 /* ============ Branding =============== */
 .branding__section {
