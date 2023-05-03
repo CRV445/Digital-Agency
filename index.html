@@ -29,13 +29,13 @@
                         <a href="#" class="list__link">home</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="list__link">About</a>
+                        <a href="#about" class="list__link">About</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="list__link">Testimonials</a>
+                        <a href="#testimonial" class="list__link">Testimonials</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="list__link">contact</a>
+                        <a href="#contact" class="list__link">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
                                 Digital Agency is your online team mangement tool that easy and prompt
                             </p>
 
-                            <a href="#" class="hero__btn btn">Contact Us</a>
+                            <button data-modal class="hero__btn btn">Contact Us</button>
                         </div>
 
                         <div class="hero__img" style="background: url('/src/img/bg-img/business-people-discussing-business-idea.png') no-repeat center">
@@ -89,8 +89,8 @@
                                 <li class="companies__item">
                                     <img src="/src/img/icons/zoom.svg" alt="zoom">
                                 </li>
-                                
                             </ul>
+
                             <ul class="compainies__list">
                                 <li class="companies__item">
                                     <img src="/src/img/icons/spotify.svg" alt="spotify">
@@ -107,7 +107,6 @@
                                 <li class="companies__item">
                                     <img src="/src/img/icons/zoom.svg" alt="zoom">
                                 </li>
-                                
                             </ul>
                             
                         </div>
@@ -115,7 +114,7 @@
                 </div>
             </section>
             <!-- Branding -->
-            <section class="branding__section branding">
+            <section class="branding__section branding" id="about">
                 <div class="branding__container">
                     <div class="branding__content content">
                         <div class="branding__img content__img" style="background: url('/src/img/bg-img/designer-team-working-on-creative-design.png') no-repeat center;"></div>
@@ -152,7 +151,7 @@
                 <div class="custome__circle"></div>
             </section>
             <!-- Testimonial -->
-            <section class="section__testimonial testimonial">
+            <section class="section__testimonial testimonial" id="testimonial">
                 <div class="testimonial__container">
                     <h2 class="testimonal__title">TESTIMONIALS</h2>
                     <span class="testimonial__subtitle">
@@ -193,7 +192,7 @@
                 </div>
             </section>
             <!-- Contanct Section -->
-            <section class="section__contact contact">
+            <section class="section__contact contact" id="contact">
                 <div class="contact__container">
                     <div class="hero__content contact__content">
                         <div class="hero__data contact__data">
@@ -205,7 +204,7 @@
                                 We work with Brans, Startups, to SMEs. Colaborate for more impact and growt
                             </p>
 
-                            <a href="#" class="contact__btn btn">Contact Us</a>
+                            <button data-modal class="contact__btn btn">Contact Us</button>
                         </div>
 
                         <div class="contact__img">
@@ -260,7 +259,7 @@
                                     <a href="#" class="submenu__link">Partners</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Contact Us</a>
+                                    <a data-modal href="#modal" class="submenu__link">Contact Us</a>
                                 </li>
                             </ul>
                         </li>
@@ -290,6 +289,32 @@
                 </span>
             </div>
         </footer>
+        <!-- Modal contact -->
+        <div class="modal" id="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">
+                            <i class="uil uil-times"></i>
+                        </div>
+                        <span class="modal__title">We will contact you as soon as possible!</span>
+                        <input placeholder="Your name" name="name" type="text" class="modal__input">
+                        <input placeholder="Your phone" name="phone" type="phone" class="modal__input">
+                        <button class="modal__btn btn">Перезвонить мне</button>
+                    </form>
+                    <!-- decor -->
+                    <div class="modal__decor1 decor">
+                        <img src="/src/img/bg-img/asian-woman-4975939-4159825 1.png" alt="">
+                    </div>
+                    <div class="modal__decor2 decor">
+                        <img src="/src/img/bg-img/black-woman-4975941-4159827 1.png" alt="">
+                    </div>
+                    <div class="modal__decor3 decor">
+                        <img src="/src/img/bg-img/western-man-4975942-4159828 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- script -->
     <script defer src="/src/js/main.js"></script>
