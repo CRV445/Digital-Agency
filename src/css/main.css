@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 @import url('/src/css/header.css');
 @import url('/src/css/hero.css');
+@import url('/src/css/companies.css');
 
 /* Variable*/
 :root {
@@ -65,6 +66,7 @@ img {
     height: 100vh;
     background: hsla(var(--black-color), 20%, 79%, 1);
     padding-inline: 25px;
+    overflow-x: hidden;
 }
 
 
