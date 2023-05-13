@@ -18,303 +18,62 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- HEADER -->
         <header class="header">
-            <nav class="nav nav__container">
-                <div class="header__logo logo">
-                    <a href="#" class="logo__link">Digital Agency</a>
+            <nav class="nav header__nav container">
+                <a href="#" class="header__logo">
+                    <span class="logo"><span>D</span>igital <span>A</span>gency</span>
+                </a>
+
+                <div class="menu header__menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Testimonials</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">contact</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <ul class="nav__list">
-                    <li class="list__item">
-                        <a href="#" class="list__link">home</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#about" class="list__link">About</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#testimonial" class="list__link">Testimonials</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#contact" class="list__link">contact</a>
-                    </li>
-                </ul>
+                <div class="btn">
+                    <i class="uil uil-times toggle__icon" id="close-btn"></i>
+                    <i class="uil uil-bars toggle__icon" id="bars-btn"></i>
+                </div>
             </nav>
         </header>
         <!-- MAIN -->
         <main class="main">
-            <!-- Hero -->
-            <section class="section__hero hero">
-                <div class="hero__container">
+            <section class="section section__hero">
+                <div class="container">
                     <div class="hero__content">
                         <div class="hero__data">
-                            <h1 class="hero__title">
+                            <h1 class="hero__title section__title">
                                 Building digital products, brands & experience
                             </h1>
 
-                            <p class="hero__text">
+                            <p class="hero__descr section__descr">
                                 Digital Agency is your online team mangement tool that easy and prompt
                             </p>
 
-                            <button data-modal class="hero__btn btn">Contact Us</button>
+                            <button type="button" class="contact__btn hero__btn">
+                                contact us
+                            </button>
                         </div>
 
-                        <div class="hero__img" style="background: url('/src/img/bg-img/business-people-discussing-business-idea.png') no-repeat center">
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__circle"></div>
-            </section>
-            <!-- Companies -->
-            <section class="section__companies companies">
-                <div class="companies__container">
-                    <span class="companies__text">
-                        Trusted by 4,000+ companies
-                    </span>
-
-                    <div class="companies__data">
-                        <div class="companies__slider-inner">
-                            <ul class="compainies__list">
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/spotify.svg" alt="spotify">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/slack.svg" alt="slack">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/dropbox.svg" alt="dropbox">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/zoom.svg" alt="zoom">
-                                </li>
-                            </ul>
-
-                            <ul class="compainies__list">
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/spotify.svg" alt="spotify">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/slack.svg" alt="slack">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/dropbox.svg" alt="dropbox">
-                                </li>
-        
-                                <li class="companies__item">
-                                    <img src="/src/img/icons/zoom.svg" alt="zoom">
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Branding -->
-            <section class="branding__section branding" id="about">
-                <div class="branding__container">
-                    <div class="branding__content content">
-                        <div class="branding__img content__img" style="background: url('/src/img/bg-img/designer-team-working-on-creative-design.png') no-repeat center;"></div>
-                        <div class="branding__data content__data">
-                            <h2 class="content__title">Branding & Design system</h2>
-                            <p class="content__descr">
-                                Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
-                            </p>
-
-                            <a href="#" class="btn__arrow right-arrow">
-                                <i class="uil uil-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Custome -->
-            <section class="custome__section custome">
-                <div class="custome__container">
-                    <div class="custome__content content">
-                        <div class="custome__img content__img" style="background: url('/src/img/bg-img/businessman-analyzing-data.png') no-repeat center;"></div>
-                        <div class="custome__data content__data">
-                            <h2 class="content__title">Custome & Plugin Development</h2>
-                            <p class="content__descr">
-                                Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
-                            </p>
-
-                            <a href="#" class="btn__arrow right-arrow">
-                                <i class="uil uil-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="custome__circle"></div>
-            </section>
-            <!-- Testimonial -->
-            <section class="section__testimonial testimonial" id="testimonial">
-                <div class="testimonial__container">
-                    <h2 class="testimonal__title">TESTIMONIALS</h2>
-                    <span class="testimonial__subtitle">
-                        Read What Other have to Say
-                    </span>
-
-                    <div class="testimonial__wrapper">
-                        <div class="testimonial__card card-testimonial">
-                            <div class="card-testimonial__img">
-                                <img src="/src/img/bg-img/western-man-4975942-4159828 1.png" alt="">
-                            </div>
-                            <h3 class="card-testimonial__name">Andrew Rathore</h3>
-                            <p class="card-testimonial__descr">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. 
-                            </p>
-                        </div>
-
-                        <div class="testimonial__card card-testimonial">
-                            <div class="card-testimonial__img">
-                                <img src="/src/img/bg-img/asian-woman-4975939-4159825 1.png" alt="">
-                            </div>
-                            <h3 class="card-testimonial__name">Vera Duncan</h3>
-                            <p class="card-testimonial__descr">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. 
-                            </p>
-                        </div>
-
-                        <div class="testimonial__card card-testimonial">
-                            <div class="card-testimonial__img">
-                                <img src="/src/img/bg-img/black-woman-4975941-4159827 1.png" alt="">
-                            </div>
-                            <h3 class="card-testimonial__name">Mark Smith</h3>
-                            <p class="card-testimonial__descr">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Contanct Section -->
-            <section class="section__contact contact" id="contact">
-                <div class="contact__container">
-                    <div class="hero__content contact__content">
-                        <div class="hero__data contact__data">
-                            <h2 class="hero__title contact__title">
-                                Be a part of the next big thing
-                            </h2>
-
-                            <p class="hero__text contact__text">
-                                We work with Brans, Startups, to SMEs. Colaborate for more impact and growt
-                            </p>
-
-                            <button data-modal class="contact__btn btn">Contact Us</button>
-                        </div>
-
-                        <div class="contact__img">
-                            <img src="/src/img/bg-img/customer-support.png" alt="customer-support">
+                        <div class="hero__img">
+                            <img src="/src/img/bg-img/business-people-discussing-business-idea.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <!-- footer -->
-        <footer class="footer">
-            <div class="footer__container">
-                <nav class="footer__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__items">
-                            <h2 class="menu__title">Digital Agency</h2>
-                            <ul class="menu__submenu submenu">
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Building digital products,<br/> brands & experience</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu__items">
-                            <h2 class="menu__title">Resources</h2>
-                            <ul class="menu__submenu submenu">
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Guides</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Blog</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Cuistomer Stories</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Glossery</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu__items">
-                            <h2 class="menu__title">Company</h2>
-                            <ul class="menu__submenu submenu">
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">About Us</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Careers</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Partners</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a data-modal href="#modal" class="submenu__link">Contact Us</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="menu__items">
-                            <h2 class="menu__title">Social Media</h2>
-                            <ul class="menu__submenu submenu">
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">LinkedIn</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Facebook</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Instagram</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a href="#" class="submenu__link">Twitter</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <span class="copyright">
-                    &#169 All rights reserved!
-                </span>
-            </div>
-        </footer>
-        <!-- Modal contact -->
-        <div class="modal" id="modal">
-            <div class="modal__dialog">
-                <div class="modal__content">
-                    <form action="#">
-                        <div data-close class="modal__close">
-                            <i class="uil uil-times"></i>
-                        </div>
-                        <span class="modal__title">We will contact you as soon as possible!</span>
-                        <input placeholder="Your name" name="name" type="text" class="modal__input">
-                        <input placeholder="Your phone" name="phone" type="phone" class="modal__input">
-                        <button class="modal__btn btn">Перезвонить мне</button>
-                    </form>
-                    <!-- decor -->
-                    <div class="modal__decor1 decor">
-                        <img src="/src/img/bg-img/asian-woman-4975939-4159825 1.png" alt="">
-                    </div>
-                    <div class="modal__decor2 decor">
-                        <img src="/src/img/bg-img/black-woman-4975941-4159827 1.png" alt="">
-                    </div>
-                    <div class="modal__decor3 decor">
-                        <img src="/src/img/bg-img/western-man-4975942-4159828 1.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- script -->
     <script defer src="/src/js/main.js"></script>

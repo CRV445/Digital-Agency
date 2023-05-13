@@ -1,0 +1,40 @@
+
+.section__hero {
+    min-height: 100%;
+    text-align: center;
+}
+
+.hero__content {
+    padding-top: 3.5rem;
+}
+.hero__data {
+    
+    margin-block: 4rem;
+}
+
+.hero__data>*:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.hero__title {
+}
+
+.hero__descr {
+}
+
+.hero__btn {
+}
+.hero__img {
+}
+
+@media (min-width: 768px) {
+    .hero__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 8rem;
+        text-align: left;
+    }
+    .hero__data{
+        flex: 0 1 50%;
+    }
+}
