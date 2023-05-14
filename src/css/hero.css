@@ -26,15 +26,3 @@
 .hero__img {
 }
 
-@media (min-width: 768px) {
-    .hero__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 8rem;
-        text-align: left;
-    }
-    .hero__data{
-        flex: 0 1 50%;
-    }
-}

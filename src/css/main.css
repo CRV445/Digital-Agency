@@ -3,6 +3,8 @@
 @import url('/src/css/header.css');
 @import url('/src/css/hero.css');
 @import url('/src/css/companies.css');
+@import url('/src/css/brandingAndCustome.css');
+@import url('/src/css/testimonials.css');
 
 /* Variable*/
 :root {
@@ -20,8 +22,6 @@
     /* transiton */
     --transition: .2s ease;
 }
-
-
 
 
 /* Base style */
@@ -71,12 +71,17 @@ img {
 
 
 .section {
+    padding-top: 120px;
     color: #272D38;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1440px;
+}
+
+.content{
+    text-align: center;
 }
 
 .section__title {
@@ -111,4 +116,22 @@ img {
 .contact__btn:hover{
     box-shadow: 0px 0px 20px hsla(214, 46%, 56%, .5);
     background: #5A87C2;
+}
+
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 8rem;
+        text-align: left;
+    }
+    .__data{
+        flex: 0 1 50%;
+    }
+
+    .content .branding__data{
+        order: 1;
+    }
 }
