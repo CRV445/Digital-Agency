@@ -39,17 +39,15 @@
 }
 
 .header__menu {
-    position: absolute;
-    top: 0%;
+    position: fixed;
+    top: -100%;
     left: 0%;
     background: rgba(66, 208, 168, .9);
     width: 100%;
     height: 100%;
     padding-top: 8rem;
 
-
-    transform: translate(0, -100%);
-    transition: transform .4s cubic-bezier(0, 0.5, 0.56, 1.2);
+    transition: top .4s cubic-bezier(0, 0.5, 0.56, 1.2);
 }
 .menu__list {
     display: flex;
@@ -110,7 +108,7 @@
 }
 
 .show{
-    transform: translate(0, 0%);
+    top: 0%;
 }
 
 
