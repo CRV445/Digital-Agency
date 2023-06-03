@@ -39,6 +39,7 @@
 
 .testimonials__card-img img{
     object-fit: cover;
+    transform: translateY(4px);
 }
 
 .testimonials__card-name {
@@ -62,7 +63,7 @@
     .testimonials__descr {
         margin: 0 auto;
         max-width: 450px;
-        font-size: calc(var(--index) * 1.7);
+        font-size: calc(var(--index) * 1.4);
     }
 
     .testimonials__wrapper {

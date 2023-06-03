@@ -24,3 +24,14 @@ function removeClassName() {
     barsBtn.style.display = 'block';
     closeBtn.style.display = 'none';
 }
+
+//**при нажатии на ссылку меню скрывается */
+const navLink = document.querySelectorAll('.menu__link');
+
+function linkAction() {
+    const navMenu = document.querySelector('#menu');
+
+    navMenu.classList.remove('show-menu');
+}
+
+navLink.forEach(n => n.addEventListener('click', removeClassName));

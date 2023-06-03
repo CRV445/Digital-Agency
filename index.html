@@ -28,30 +28,30 @@
                 <div class="menu header__menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Home</a>
+                            <a href="#home" class="menu__link">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">About</a>
+                            <a href="#about" class="menu__link">About</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Testimonials</a>
+                            <a href="#testimonials" class="menu__link">Testimonials</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">contact</a>
+                            <a href="#contact" class="menu__link">contact</a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="btn">
-                    <i class="uil uil-times toggle__icon" id="close-btn"></i>
-                    <i class="uil uil-bars toggle__icon" id="bars-btn"></i>
-                </div>
             </nav>
+
+            <div class="btn">
+                <i class="uil uil-times toggle__icon" id="close-btn"></i>
+                <i class="uil uil-bars toggle__icon" id="bars-btn"></i>
+            </div>
         </header>
         <!-- MAIN -->
         <main class="main">
             <!-- HERO -->
-            <section class="section section__hero">
+            <section class="section section__hero" id="home">
                 <div class="container">
                     <div class="hero__content content">
                         <div class="hero__data __data">
@@ -100,7 +100,7 @@
                 </div>
             </section>
             <!-- Branding -->
-            <section class="section section__branding">
+            <section class="section section__branding" id="about">
                 <div class="container">
                     <div class="branding__content content">
                         <div class="branding__data __data">
@@ -148,7 +148,7 @@
                 </div>
             </section>
             <!-- Testimonials -->
-            <section class="section testimonials__section">
+            <section class="section testimonials__section" id="testimonials">
                 <div class="container">
                     <div class="testimonials__content">
                         <h2 class="testimonials__title">
@@ -190,7 +190,108 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact section -->
+            <section class="section section__contact" id="contact">
+                <div class="container">
+                    <div class="contact__content content">
+                        <div class="contact__data __data">
+                            <h1 class="contact__title section__title">
+                                Building digital products, brands & experience
+                            </h1>
+
+                            <p class="contact__descr section__descr">
+                                Digital Agency is your online team mangement tool that easy and prompt
+                            </p>
+
+                            <button type="button" class="contact__btn contact__btn">
+                                contact us
+                            </button>
+                        </div>
+
+                        <div class="contact__img section__img">
+                            <img src="/src/img/bg-img/customer-support.png" alt="customer support">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__nav">
+                    <div class="footer__menu">
+                        <ul class="footer__list-title">
+                            <li class="list-title__item">
+                                <h2 class="list-title__title">Digital Agency</h2>
+                                <p class="list-title__descr">
+                                    Building digital products, <br> brands & experience
+                                </p>
+                            </li>
+                            <li class="list-title__item">
+                                <h2 class="list-title__title">Resources</h2>
+
+                                <ul class="sublist__items">
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Guides</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Blog</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Cuistomer Stories</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Glossery</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-title__item">
+                                <h2 class="list-title__title">Company</h2>
+
+                                <ul class="sublist__items">
+                                    <li class="sublist__item">
+                                        <a href="#about" class="sublist__link">About Us</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Careers</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#" class="sublist__link">Partners</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="#contact" class="sublist__link">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-title__item">
+                                <h2 class="list-title__title">Social Media</h2>
+
+                                <ul class="sublist__items">
+                                    <li class="sublist__item">
+                                        <a href="linkedin.com" class="sublist__link">LinkedIn</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="facebook.com" class="sublist__link">Facebook</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="www.instagram.com" class="sublist__link">Instagram</a>
+                                    </li>
+                                    <li class="sublist__item">
+                                        <a href="twitter.com" class="sublist__link">Twitter</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="copyright">
+                    © Matheus. Todos os direitos reservados
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- script -->
     <script defer src="/src/js/main.js"></script>

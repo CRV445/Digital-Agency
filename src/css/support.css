@@ -1,0 +1,43 @@
+
+.section__contact {
+    padding-block: 138px;
+}
+
+.contact__content {
+    padding: calc(var(--index) * 3);
+    background: hsl(0, 0%, 96%);
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.contact__data>*:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.contact__data {
+    order: 2;
+}
+
+.contact__title {
+    margin-bottom: 16px;
+}
+
+.contact__descr {
+    margin-bottom: 32px;
+}
+
+.contact__btn {
+}
+
+.contact__img {
+    display: none;
+}
+
+.section__img {
+}
+
+@media (min-width: 768px) {
+    .contact__img {
+        display: block;
+    }
+}
